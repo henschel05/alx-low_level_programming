@@ -2,7 +2,7 @@
 
 /**
  * main - Prints the alphabet in lowercase, except for q and e.
- * style - betty-style
+ * 
  * Return: Always 0.
  */
 int main(void)
