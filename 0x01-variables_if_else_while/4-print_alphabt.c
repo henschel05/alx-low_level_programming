@@ -1,9 +1,8 @@
 #include <stdio.h>
-
-/**
- * main - Prints some letters of alphabet
- *
- * Return: Always (Success)
+/*
+ * Text text text
+ * Main - prints answer
+ * Return : 0
  */
 int main(void)
 {
