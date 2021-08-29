@@ -1,3 +1,9 @@
+/*
+ * Text text text
+ * Main - prints answer
+ * Return : 0
+ */
+
 #include <stdio.h>
 
 /**
