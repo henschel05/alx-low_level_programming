@@ -1,7 +1,7 @@
 /**
  * main - prints to string
- * Description - prints alphabet in lowercase
- * Return 0
+ * Description: prints alphabet in lowercase
+ * Return: 0
  */
 #include <stdlib.h>
 #include <time.h>
