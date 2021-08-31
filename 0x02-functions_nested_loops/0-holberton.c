@@ -1,4 +1,4 @@
-#include "holberton.hy"
+#include "holberton.h"
 /**
  * main - entry point
  * Description: Prints Holberton with _putchar
