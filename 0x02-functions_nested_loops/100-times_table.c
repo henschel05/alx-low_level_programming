@@ -1,48 +1,49 @@
 #include "holberton.h"
 /**
- * print_times_table - prints the times table up to the integer input
- * @n: integer input
+ * print_times_table - Prints a multiplication table up to param
+ * @n: The number to be treated
  *
- * Return: void
+ * Return: Number matrix
  */
 void print_times_table(int n)
 {
-int a, b, c, d, e, f;
-if (n >= 0 && n < 15)
+int x, y, z;
+if (n >= 0 && n <= 14)
 {
-for (a = 0; a <=  n; a++)
+for (x = 0; x <= n; x++)
 {
-for (b = 0; b <= n; b++)
+for (y = 0; y <= n; y++)
 {
-c = a * b; d = c / 100; e = (c /  10) % 10;
-f = (c % 100) % 10;
-if (b == 0)
+z = x * y;
+if (z > 99)
 {
-_putchar('0');
+_putchar(',');
+_putchar(32);
+_putchar((z / 100) + '0');
+_putchar(((z / 10) % 10) + '0');
+_putchar((z % 10) + '0');
 }
-else if (c < 10)
+else if (z > 9)
 {
-_putchar(' '); _putchar(' ');
-_putchar('0' + f);
-}
-else if (c < 100)
-{
-_putchar(' ');
-_putchar('0' + e); _putchar('0' + f);
-}
-else
-{
-_putchar('0' + d);
-_putchar('0' + e);
-_putchar('0' + f);
-}
-if (b < n)
-{
-_putchar(','); _putchar(' ');
+_putchar(',');
+_putchar(32);
+_putchar(32);
+_putchar(((z / 10) % 10) + '0');
+_putchar((z % 10) + '0');
 }
 else
+{
+if (y != 0)
+{
+_putchar(',');
+_putchar(32);
+_putchar(32);
+_putchar(32);
+}
+_putchar(z + '0');
+}
+}
 _putchar('\n');
-}
 }
 }
 }
