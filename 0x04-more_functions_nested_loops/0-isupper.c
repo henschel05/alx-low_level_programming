@@ -1,15 +1,22 @@
-#include "main.h"
 /**
- * _isupper - Check if a letter is upper
- * @x: The number to be checked
- *
- * Return: 1 for upper letter or 0 for any else
+ * _isupper - Entry point
+ * Description: prints alphabet
+ *@c: the integer value it receives
+ * Return: 1 if true. 0 if false.
  */
-int _isupper(int x)
+#include "main.h"
+#include <stdio.h>
+int _isupper(int c)
 {
-if (x >= 65 && x <= 90)
+int i = 'A';
+for (i = 'A'; i <= 'Z'; i++)
+{
+/* refer int c*/
+if (c == i)
 {
 return (1);
 }
+}
 return (0);
+}
 }
